@@ -1,0 +1,18 @@
+body{
+    padding:0px;
+    margin: 0px;
+    
+}
+div.main{
+    transform: translate(450px, 20px);
+   
+}
+
+button{
+    background-color: rgb(139, 128, 233);
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
