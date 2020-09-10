@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>V-Bank System</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8" />
+        <script src= "main.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+
+<style type="text/css">
+
+body{
+    padding:0px;
+    margin: 0px;
+    
+}
+div.main{
+   
+}
+
+button{
+    background-color: rgb(139, 128, 233);
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+</style>
+<script type="text/javascript">
+var add;
+var balance;
+balance = 0;
+var withdraw;
+
+
+function addMoney (){
+    add = window.prompt("Enter amount to add");
+    alert("You have just added N" + add + " to your account.");
+    balance = add;
+ }
+    
+
+ function withdrawMoney (){
+     withdraw = window.prompt("Enter amount to withdraw");
+    alert("You have just withdrawn N" + withdraw + " from your account.");
+    balance = balance - withdraw;
+ }
+
+ function checkBalance (){
+     alert("You have N" + balance + " left in your account");
+   
+ }
+
+// alert(balance);
+</script>
+        <main>
+            <div class="main">
+                <h3>Welcome to Treasure's Virtual Bank System.</h3>
+                <h3>What would you like to do;</h3>
+
+                <h3></h3>
+
+
+                <button onclick="addMoney()">ADD MONEY</button>
+                <button onclick="withdrawMoney()">WITHDRAW MONEY</button>
+                <button onclick="checkBalance()">CHECK BALANCE</button>
+            </div>
+        </main>
+    </body>
+</html>
